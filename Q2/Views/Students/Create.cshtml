@@ -1,0 +1,17 @@
+
+@model Q2_ASPNET_StudentManagement.Models.Student
+
+<h2>Add Student</h2>
+
+<form asp-action="Create">
+    <label>Name</label>
+    <input asp-for="Name" />
+    <br />
+    <label>City</label>
+    <input asp-for="City" />
+    <br />
+    <label>Age</label>
+    <input asp-for="Age" type="number" />
+    <br />
+    <input type="submit" value="Create" />
+</form>

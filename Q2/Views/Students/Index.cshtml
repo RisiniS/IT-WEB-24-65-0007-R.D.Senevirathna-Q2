@@ -1,0 +1,20 @@
+
+@model IEnumerable<Q2_ASPNET_StudentManagement.Models.Student>
+
+<h2>Students</h2>
+<a href="/Students/Create">Add New Student</a>
+<table>
+    <thead>
+        <tr><th>Name</th><th>City</th><th>Age</th></tr>
+    </thead>
+    <tbody>
+        @foreach (var student in Model)
+        {
+            <tr>
+                <td>@student.Name</td>
+                <td>@student.City</td>
+                <td>@student.Age</td>
+            </tr>
+        }
+    </tbody>
+</table>
